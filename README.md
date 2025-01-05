@@ -1,13 +1,13 @@
 # Welcome to FinixDev Website 🚀
 
-Hi! I’m **Om Pandey**, a passionate **Full Stack Developer**. I had the privilege of creating this modern business website for **Mega Minds** using the latest web technologies to help their business grow and thrive in the digital world.
+Hi! I’m **Om Pandey**, a passionate **Full Stack Developer**. I had the privilege of creating this modern business website for **Finix Dev** using the latest web technologies to help their business grow and thrive in the digital world.
 
 ## 🌐 Live Site
-You can check out the live website here: [**Mega Minds**](https://www.megaminds.com.np/)
+You can check out the live website here: [**FinixDev**](https://finixdev.netlify.app/)
 
 ## 💡 About the Website
 
-This site was built with a focus on user experience, simplicity, and scalability. The goal was to provide an intuitive and visually appealing platform for Mega Minds, and I used the following technologies:
+This site was built with a focus on user experience, simplicity, and scalability. The goal was to provide an intuitive and visually appealing platform for Finix Dev, and I used the following technologies:
 
 - **HTML5** for structured content.
 - **Tailwind CSS** for modern, responsive design.
@@ -38,7 +38,7 @@ I’m always open to feedback, collaboration, or new opportunities. Feel free to
 - **Icons**: Used FontAwesome for modern icons.
 
 ## 🤝 Acknowledgments
-Special thanks to **Mega Minds** for trusting me with this project! It was a pleasure bringing their vision to life.
+Special thanks to **Finix Dev** for trusting me with this project! It was a pleasure bringing their vision to life.
 
 ---
 
