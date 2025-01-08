@@ -23,53 +23,7 @@
       });
     });
   </script>
-  <style>
-    /* Toast Notification Container */
-    #toast-container {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 9999;
-    }
 
-    /* Toast Styles */
-    .toast {
-      background-color: transparent;
-      border: 2px solid white;
-      /* Success border */
-      padding: 15px 20px;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      opacity: 0;
-      transform: translateX(100%) rotate(0deg);
-      transition: opacity 0.5s ease, transform 0.5s ease, border-width 0.3s ease-in-out;
-    }
-
-    .toast.error {
-      border-color: red;
-      /* Error border */
-    }
-
-    .toast.show {
-      opacity: 1;
-      transform: translateX(0) rotate(5deg);
-      /* Zigzag effect */
-    }
-
-    .toast.show:nth-child(odd) {
-      transform: translateX(0) rotate(-5deg);
-      /* Alternate zigzag */
-    }
-
-    .toast.hide {
-      border-width: 0;
-      transform: translateX(100%) rotate(0deg);
-      opacity: 0;
-    }
-  </style>
 
 </head>
 
@@ -354,7 +308,7 @@
           </div>
         </a>
       </div>
-      
+
       <!-- Added Get All Resources Button -->
       <div class="flex justify-center mt-12">
         <a href="Discord.html" target="_blank" class="group">
@@ -577,33 +531,13 @@
 
   <script src="app.js"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <div id="toast-container"></div>
   <script>
     // Initialize Email.js
     emailjs.init("W-e_k-DyBKT6fxX02");
 
-    // Function to show toast notifications
-    function showToast(message, type = "success") {
-      const container = document.getElementById("toast-container");
-
-      // Create a new toast element
-      const toast = document.createElement("div");
-      toast.className = `toast ${type}`;
-      toast.textContent = message;
-
-      // Append the toast to the container
-      container.appendChild(toast);
-
-      // Show the toast with animation
-      setTimeout(() => {
-        toast.classList.add("show");
-      }, 100);
-
-      // Remove the toast after 3 seconds
-      setTimeout(() => {
-        toast.classList.add("hide");
-        setTimeout(() => toast.remove(), 500); // Allow time for hide animation
-      }, 3000);
+    // Function to show alert notifications
+    function showAlert(message, type = "success") {
+      alert(message);  // Display the message using alert
     }
 
     // Handle form submission
@@ -623,16 +557,17 @@
         .send("service_h63kq28", "template_ryluiss", formData)
         .then(
           function (response) {
-            showToast("Message sent successfully!", "success");
+            showAlert("Message sent successfully!", "success");
             form.reset(); // Clear the form after success
           },
           function (error) {
-            showToast("Failed to send message. Please try again.", "error");
+            showAlert("Failed to send message. Please try again.", "error");
             console.error("EmailJS Error:", error);
           }
         );
     });
   </script>
+
 
 
   <!-- Add this just before the closing </body> tag -->
