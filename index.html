@@ -150,8 +150,7 @@
       <h2 class="text-4xl font-bold mb-16 fade-in">MENTALITY</h2>
       <div class="max-w-4xl mx-auto">
         <!-- Code Editor Box with Full Borders -->
-        <div
-          class="overflow-hidden border-2 border-gray-700 hover:border-cyan-400 transition-all duration-300">
+        <div class="overflow-hidden border-2 border-gray-700 hover:border-cyan-400 transition-all duration-300">
           <!-- Editor Header -->
           <div class="bg-black border-b border-gray-800 p-4 flex items-center">
             <!-- macOS-style dots -->
@@ -166,7 +165,7 @@
               <!-- Motivation text -->
               motivation.py
             </span>
-            
+
           </div>
 
           <!-- Code Content Split -->
@@ -352,6 +351,15 @@
             <i class="ri-folder-fill text-6xl mb-4 text-pink-500"></i>
             <h3 class="text-xl font-bold text-center group-hover:text-pink-400 transition-colors">React Node Projects
             </h3>
+          </div>
+        </a>
+      </div>
+      
+      <!-- Added Get All Resources Button -->
+      <div class="flex justify-center mt-12">
+        <a href="Discord.html" target="_blank" class="group">
+          <div class="px-8 py-4 border border-gray-800 hover:border-blue-400 transition-all duration-300 ">
+            <h3 class="text-xl font-bold text-center group-hover:text-blue-400 transition-colors">Get All Resources</h3>
           </div>
         </a>
       </div>
@@ -542,25 +550,25 @@
             </div>
           </form>
         </div>
-        <div class="fade-in delay-2 space-y-8">        
+        <div class="fade-in delay-2 space-y-8">
         </div>
       </div>
     </section>
-    
+
 
     <!-- Footer Section -->
-<footer class="text-gray-400 py-4">
-  <div class="container mx-auto flex justify-between items-center">
-    <!-- Left: Copyright -->
-    <div class="text-sm">
-      <a href="index.html" class="hover:text-white">© Finix Dev</a>
-    </div>
-    <!-- Right: Developed by Om Pandey -->
-    <div class="text-sm text-right">
-      <a href="https://www.omkumarpandey.com.np/" target="_blank" class="hover:text-white">Author : Om Pandey</a>
-    </div>
-  </div>
-</footer>
+    <footer class="text-gray-400 py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Left: Copyright -->
+        <div class="text-sm">
+          <a href="index.html" class="hover:text-white">© Finix Dev</a>
+        </div>
+        <!-- Right: Developed by Om Pandey -->
+        <div class="text-sm text-right">
+          <a href="https://www.omkumarpandey.com.np/" target="_blank" class="hover:text-white">Author : Om Pandey</a>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Decorative Elements -->
@@ -623,6 +631,139 @@
             console.error("EmailJS Error:", error);
           }
         );
+    });
+  </script>
+
+
+  <!-- Add this just before the closing </body> tag -->
+
+  <!-- Modal HTML -->
+  <div id="welcome-modal"
+    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(8px); z-index: 99999; opacity: 0; visibility: hidden; transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);">
+    <div
+      style="background: linear-gradient(145deg, rgba(17, 25, 40, 0.9), rgba(0, 0, 0, 0.9)); border: 1px solid rgba(34, 211, 238, 0.2); padding: 50px 40px; border-radius: 24px; width: 480px; position: relative; text-align: center; transform: translateY(30px) scale(0.9); transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), 0 0 20px rgba(34, 211, 238, 0.1);">
+
+      <!-- Decorative elements -->
+      <div
+        style="position: absolute; top: -20px; left: -20px; width: 60px; height: 60px; border: 2px solid rgba(34, 211, 238, 0.2); border-radius: 50%; transform: scale(0); transition: transform 0.5s ease-out 0.3s;">
+      </div>
+      <div
+        style="position: absolute; bottom: -15px; right: -15px; width: 40px; height: 40px; border: 2px solid rgba(34, 211, 238, 0.2); border-radius: 50%; transform: scale(0); transition: transform 0.5s ease-out 0.4s;">
+      </div>
+
+      <!-- Close button -->
+      <button onclick="closeWelcomeModal()"
+        style="position: absolute; right: 20px; top: 20px; color: rgba(255, 255, 255, 0.6); background: none; border: none; cursor: pointer; padding: 8px; border-radius: 50%; transition: all 0.3s ease; transform: rotate(0deg);">
+        <i class="ri-close-line" style="font-size: 24px;"></i>
+      </button>
+
+      <!-- Modal content -->
+      <div style="position: relative;">
+        <i class="ri-discord-fill"
+          style="font-size: 84px; background: linear-gradient(135deg, #7289DA, #5865F2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 25px; display: block; transform: translateY(20px); opacity: 0; transition: all 0.5s ease-out 0.2s;"></i>
+        <h2
+          style="background: linear-gradient(135deg, #22d3ee, #67e8f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 28px; font-weight: bold; margin-bottom: 16px; transform: translateY(20px); opacity: 0; transition: all 0.5s ease-out 0.3s;">
+          Join Our Community</h2>
+        <p
+          style="color: rgba(255, 255, 255, 0.7); margin-bottom: 30px; transform: translateY(20px); opacity: 0; transition: all 0.5s ease-out 0.4s;">
+          For all updates and resources</p>
+        <a href="https://discord.gg/Wfz5rsCW" target="_blank"
+          style="display: inline-block; background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(34, 211, 238, 0.05)); border: 1px solid rgba(34, 211, 238, 0.3); color: #22d3ee; padding: 14px 36px; border-radius: 12px; text-decoration: none; font-weight: bold; transition: all 0.3s ease; transform: translateY(20px); opacity: 0; transition: all 0.5s ease-out 0.5s; backdrop-filter: blur(4px);">
+          Join Discord
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal JavaScript -->
+  <script>
+    function showWelcomeModal() {
+      const modal = document.getElementById('welcome-modal');
+      const modalContent = modal.querySelector('div');
+      const circles = modal.querySelectorAll('div > div'); // Decorative circles
+      const elements = modal.querySelectorAll('i, h2, p, a'); // Content elements
+
+      // Make modal visible
+      modal.style.visibility = 'visible';
+
+      // Start animations
+      setTimeout(() => {
+        modal.style.opacity = '1';
+        modalContent.style.transform = 'translateY(0) scale(1)';
+
+        // Animate decorative circles
+        circles.forEach(circle => {
+          circle.style.transform = 'scale(1)';
+        });
+
+        // Animate content elements
+        elements.forEach(element => {
+          element.style.transform = 'translateY(0)';
+          element.style.opacity = '1';
+        });
+      }, 10);
+    }
+
+    function closeWelcomeModal() {
+      const modal = document.getElementById('welcome-modal');
+      const modalContent = modal.querySelector('div');
+      const circles = modal.querySelectorAll('div > div');
+      const elements = modal.querySelectorAll('i, h2, p, a');
+
+      // Reverse animations
+      modal.style.opacity = '0';
+      modalContent.style.transform = 'translateY(30px) scale(0.9)';
+
+      circles.forEach(circle => {
+        circle.style.transform = 'scale(0)';
+      });
+
+      elements.forEach(element => {
+        element.style.transform = 'translateY(20px)';
+        element.style.opacity = '0';
+      });
+
+      // Hide modal after animations
+      setTimeout(() => {
+        modal.style.visibility = 'hidden';
+      }, 600);
+    }
+
+    // Show modal when page loads
+    window.addEventListener('load', function () {
+      setTimeout(showWelcomeModal, 300);
+
+      // Auto close after 3 seconds
+      setTimeout(function () {
+        closeWelcomeModal();
+      }, 3300);
+    });
+
+    // Enhanced hover effects
+    const modal = document.getElementById('welcome-modal');
+    const discordBtn = modal.querySelector('a');
+    const closeBtn = modal.querySelector('button');
+
+    discordBtn.addEventListener('mouseenter', function () {
+      this.style.transform = 'translateY(-2px)';
+      this.style.background = 'linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(34, 211, 238, 0.1))';
+      this.style.boxShadow = '0 5px 15px rgba(34, 211, 238, 0.2)';
+    });
+
+    discordBtn.addEventListener('mouseleave', function () {
+      this.style.transform = 'translateY(0)';
+      this.style.background = 'linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(34, 211, 238, 0.05))';
+      this.style.boxShadow = 'none';
+    });
+
+    closeBtn.addEventListener('mouseenter', function () {
+      this.style.transform = 'rotate(90deg)';
+      this.style.color = '#22d3ee';
+    });
+
+    closeBtn.addEventListener('mouseleave', function () {
+      this.style.transform = 'rotate(0deg)';
+      this.style.color = 'rgba(255, 255, 255, 0.6)';
     });
   </script>
 
